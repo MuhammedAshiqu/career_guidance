@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/styleinp.css'%}">
+  <title>Career Guidance</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="bg">
+      <h1>Evaluate Yourself</h1>
+      <!-- 1 -->
+      <div class="hr"></div>
+      <form action="{% url 'DropDown' %}" method="post">
+        {% csrf_token %}
+        <div class="select">
+          <span class="name">Database Fundamentals : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="fundamentalValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 2 -->
+        <div class="select">
+          <span class="name">Computer Architecture : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="computerValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 3 -->
+        <div class="select">
+          <span class="name">Distributed Computing Systems : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="distributeValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 4 -->
+        <div class="select">
+          <span class="name">Cyber Security : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="cyberValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 5 -->
+        <div class="select">
+          <span class="name">Networking : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="networkValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 6 -->
+        <div class="select">
+          <span class="name">Software Development : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="softDevValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 7 -->
+        <div class="select">
+          <span class="name">Programming Skills : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="skillValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 8 -->
+        <div class="select">
+          <span class="name">Project Management : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="projectValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 9 -->
+        <div class="select">
+          <span class="name">Computer Forensics Fundamentals : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="forensicValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 10 -->
+        <div class="select">
+          <span class="name">Technical Communication : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="technicalValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 11 -->
+        <div class="select">
+          <span class="name">AI ML : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="aiValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 12 -->
+        <div class="select">
+          <span class="name">Software Engineering : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="softwareValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 13 -->
+        <div class="select">
+          <span class="name">Business Analysis : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="businessVlaue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 14 -->
+        <div class="select">
+          <span class="name">Communication skills : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="communicationValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 15 -->
+        <div class="select">
+          <span class="name">Data Science : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="dataValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 16 -->
+        <div class="select">
+          <span class="name">Troubleshooting skills : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="troubleshootValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <!-- 17 -->
+        <div class="select">
+          <span class="name">Graphics Designing : </span>
+          <div class="custom-select" style="width:200px;">
+            <select class="cs" name="graphicValue">
+              <option value="0">Not Interested</option>
+              <option value="1">Poor</option>
+              <option value="2">Beginner</option>
+              <option value="3">Average</option>
+              <option value="4">Intermediate</option>
+              <option value="5">Excellent</option>
+              <option value="6">Professional</option>
+            </select>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <div class="sub_btn">
+          <h6><input type="submit" value="Submit" class="submit"></h6>
+        </div>
+
+      </form>
+
+      <!-- end input -->
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

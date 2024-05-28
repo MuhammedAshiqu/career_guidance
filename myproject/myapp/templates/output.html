@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styleout.css' %}">
+    <title>Career Guidance</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="con">
+            <div class="text">
+                <h1>Hey The Job Role That suits Your interest is: <br><span class="output">{{result}}</span></h1>
+            </div>
+            <div class="courses">
+                <h3>To Know more about courses <a href="https://www.google.com/search?q={{result}}">Click Here</a></h3>
+                <h2><a href='/'>Click Here For Retest</a></h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
